@@ -143,6 +143,11 @@ def get_reddit(subreddit, listing, timeframe, after=None):
             print(f"Rate limit almost exhausted. Sleeping for {sleep_time} seconds.")
             time.sleep(sleep_time)
         
+        # If rate limit information is not available, sleep for previously defined sleep_time
+        if rate_limit_remaining is None or rate_limit_reset is None:
+            time.sleep(sleep_time)
+            request = requests.get(base_url, headers={'User-agent': 'yourbot'})
+        
     except Exception as e:
         print(f'An Error Occurred: {e}')
     
@@ -187,4 +192,4 @@ if __name__ == '__main__':
     
     # Save the DataFrame to a CSV file
     df.to_csv('reddit_top_posts.csv', index=False)
-    print("DataFrame saved as 'reddit_top_posts.csv'.")
+    print("DataFrame saved as 'reddit_top_posts.csv' \nEnd of Script")
