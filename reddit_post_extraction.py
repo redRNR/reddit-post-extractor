@@ -5,7 +5,7 @@ import time
 
 timeframe = 'year'  # hour, day, week, month, year, all
 listing = 'top'  # controversial, best, hot, new, random, rising, top
-subreddits = [  # Top SFW 1000 subreddits
+subreddits = [  # Top 1000 SFW subreddits
     'funny', 'AskReddit', 'gaming', 'worldnews', 'todayilearned', 'aww', 'Music', 'memes', 'movies', 'science',
     'Showerthoughts', 'pics', 'Jokes', 'news', 'videos', 'space', 'askscience', 'DIY', 'books', 'nottheonion',
     'mildlyinteresting', 'EarthPorn', 'food', 'explainlikeimfive', 'GetMotivated', 'LifeProTips', 'gadgets', 'IAmA',
