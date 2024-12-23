@@ -10,18 +10,6 @@ This script fetches posts from Reddit using the `requests` library and stores th
 - Outputs data to a CSV file with detailed post information
 - Includes robust error handling
 
-## Requirements
-- Python 3.x
-- Required libraries:
-  - `pandas`
-  - `requests`
-  - `time`
-
-Install required libraries using pip:
-```bash
-pip install pandas requests
-```
-
 ## Usage
 1. Clone or download this repository to your local machine
 2. Ensure the required libraries are installed
